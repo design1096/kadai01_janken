@@ -257,12 +257,12 @@ function paperCardClick(){
     else if (num === 2) {
         $("#opponent_card").html('SISSORS');
         $("#judgment").html('DEFEAT');
+        winFlg = 2;
+        SetCoinNumber(winFlg);
     }
     else {
         $("#opponent_card").html('PAPER');
         $("#judgment").html('DRAW');
-        winFlg = 2;
-        SetCoinNumber(winFlg);
     }
     DisplayCoins();
 }
